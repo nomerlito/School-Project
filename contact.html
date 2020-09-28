@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>Sip n' Refresh</title>
+</head>
+<body>
+    <!--Top Nav-->
+    <div class="grey lighten-1 hide-on-med-and-down">
+        <div class="container" style="color:tomato;">
+            <div class="row" style="margin-bottom: 0px; font-family: 'Montserrat', sans-serif;">
+                <div class="col s9">
+                    <a href="#about">About Us </a>|
+                    <a href="contact.html"> Contact </a>|
+                    <a href="seller.html"> Seller Corner</a>
+                </div>
+                <div class="col s3" style="text-align: right;">
+                    <a href="#">Login </a>|
+                    <a href="#"> Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main Nav-->
+    <nav class="white" style="height: 100%;">
+        <div class="nav-wrapper">
+            <div class="container" >
+                <div class="parent" style="width: 100%;">
+                    <div class="child l2 m10" style="width: 10%;"><a href="#" style="color: grey;">
+                        <a href="#" style="color: grey; margin: auto; "></a>
+                        <img src="img/logo.png" alt="Sip n' Refresh" height="100" style="vertical-align: middle; margin: 5px;">
+                        </a>
+                    </div>
+                    <div class="child" style="width: 50%;">
+                        <a href="index.html" style="color: grey; margin: auto;">
+                            <h4 style="margin:0%;">Sip n' Refresh</h4>
+                            <h6 style="margin-top: 0%;">Milk Tea & Milk Shake</h6>
+                        </a>
+                    </div>
+                    <div class="child hide-on-med-and-down" style="width: 30%;">
+                        <form>
+                            <div class="input-field" 
+                                style="background-color: white; width: 100%; border:solid 1px #2D9CDB; 
+                                    border-radius: 10px; height: 40px;" >
+                                <input id="search" type="text" placeholder="Search in Sip n' Refresh" 
+                                    style="width: 80%; vertical-align: 30px; background: transparent; 
+                                        border-bottom: none!important; box-shadow: none!important; margin-left: 5px; margin-right: 5px; height: 35px;" required>
+                                <button type="submit" class="material-icons" 
+                                    style="height:35px; color:#ffffff; position:absolute;
+                                        border-radius: 20px; background-color:#2D9CDB; border: 0px; margin: 2px 5px 2px 0px; ">search
+                                </button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                    <div class="child">
+                        <i class="iconify" data-icon="mdi:cart-variant" data-inline="false" style="color:#2D9CDB; height: 40px; width: 40px; vertical-align: middle; text-align: right;"></i>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger amenu" style="position: absolute; float:right;"><i class="material-icons" style="font-size: 40px;">menu</i></a>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="nav-wrapper blue" style="height:20px; line-height: 20px;">
+             <div class="container">
+                <a href="#!" class="breadcrumb" >Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!--Sidenav-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    <br>
+
+
+<!--Bady Content-->
+<div class="container white">
+    
+    <div class="row">
+        
+        <div class="col l4 m4 s12">
+            <h5 style="color: #202020;">Sip n' Refresh</h5>
+            <p style="color: #202020;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ratione?</p>
+
+        </div>
+        <div class="col l8 m8 s12">
+            <div id='map' style='width: 100%; height: 400px; margin: 10px 10px 10px 0px; align-items: center;'></div>
+        </div>
+        
+    </div>
+</div>
+<div class="white">
+    <div class="container">
+        <div class="row">
+            <div class="col l4 m12 s12">
+                <div class="card-panel center-align white z-depth-2" style="margin-top: 20px; height: 160px;">
+                    <i class="iconify" data-icon="bi:shop-window" style="height: 40px; width: 40px;"></i>
+                    <br>
+                    <h6>Shop</h6>
+                    <span style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptatibus.</span>
+                </div>
+            </div>
+            <div class="col l4 m12 s12">
+                <div class="card-panel center-align white z-depth-2" style="margin-top: 20px; height: 160px;">
+                    <i class="iconify" data-icon="entypo:drink" style="height: 40px; width: 40px;"></i>
+                    <br>
+                    <h6>Dine</h6>
+                    <span style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptatibus.</span>
+                </div>
+            </div>
+            <div class="col l4 m12 s12">
+                <div class="card-panel center-align white z-depth-2" style="margin-top: 20px; height: 160px;">
+                    <i class="iconify" data-icon="tabler:truck-delivery" style="height: 40px; width: 40px;"></i>
+                    <br>
+                    <h6>Ship</h6>
+                    <span style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptatibus.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Footer-->
+<footer class="page-footer blue" style="margin-top: -15px; font-family: 'Montserrat', sans-serif;">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+            <div class="parent">
+                <div class="child">
+                    <img src="img/logo.png" alt="Sip n' Refresh" height="80" style="vertical-align: middle;">
+                </div>
+                <a id="about">
+                    <div class="child">
+                       <h5 class="white-text">Sip n' Refresh</h5>
+                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> 
+                    </div>
+                    </a>
+            </div>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+            <li><a class="grey-text text-lighten-3" href="#about">About Us</a></li>
+            <li><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
+            <li><a class="grey-text text-lighten-3" href="seller.html">Seller Corner</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Sip n' Refresh © 2020
+      </div>
+    </div>
+  </footer>
+      
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+
+<!--MopBox-->
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoibm9tZXJsaXRvIiwiYSI6ImNrZmp3N294MjB1eXkycXBrZWsxOWMwZWsifQ.IRnMlcD_nZX2m4flq3Ldjg';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [121.100251, 14.656023],
+zoom: 15
+});
+ 
+var marker = new mapboxgl.Marker()
+.setLngLat([121.100251, 14.656023])
+.addTo(map);
+</script>
+
+</body>
+</html>
